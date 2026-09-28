@@ -2,35 +2,40 @@
 
 void application(ALGOC_APP)
 {
-    // The player starts with 10 points
-    int points = 10;
-
-    writeLine(ALGOC, points);
-
-
-    // TASK 1:
-    // Change points to 15
+    // 1. Crée une variable entière appelée "points"
+    //    et donne-lui la valeur 5.
 
 
 
-    // Display the new value
-    writeLine(ALGOC, points);
+    // 2. Affiche la valeur de "points".
+    writeLine(ALGOC, points);    
 
 
-    // TASK 2:
-    // Add 5 points to the CURRENT value
-
-
-
-    // Display the new value
-    writeLine(ALGOC, points);
-
-
-    // TASK 3:
-    // Remove 3 points from the CURRENT value
+    // 3. Change la valeur de "points" à 10.
 
 
 
-    // Display the final value
-    writeLine(ALGOC, points);
+    // 4. Affiche la nouvelle valeur de "points".
+
+
+
+    // 5. Augmente "points" de 1 en utilisant ++.
+
+
+
+    // 6. Affiche la nouvelle valeur.
+
+
+
+    // 7. Augmente encore "points" de 1 en utilisant ++.
+
+
+
+    // 8. Diminue "points" de 1 en utilisant --.
+
+
+
+    // 9. Affiche la valeur finale de "points".
+
+
 }
