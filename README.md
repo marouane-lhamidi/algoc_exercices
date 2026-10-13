@@ -6,7 +6,7 @@ Exercices pour apprendre la **programmation en C++ et en AlgoC**, en partant de 
 
 Ce dépôt accompagne le cours **AlgoC**. Chaque leçon contient :
 
-- **Des exercices en C++** à faire dans le navigateur avec [Programiz](https://www.programiz.com/cpp-programming/online-compiler/), du plus simple au plus difficile.
+- **Des exercices en C++** à faire dans le navigateur avec [OneCompiler](https://onecompiler.com/cpp), du plus simple au plus difficile.
 - **Des exercices en AlgoC** à faire avec le robot.
 - **Une démo interactive** : une petite page web pour *voir* la notion en action avant d'écrire du code.
 
@@ -51,7 +51,7 @@ Ouvrez la démo **avant** de commencer les exercices de la leçon.
 algoc_exercices/
 ├── README.md
 └── Variables/                      une leçon = un dossier
-    ├── cpp/                        exercices C++ (Programiz)
+    ├── cpp/                        exercices C++ (OneCompiler)
     │   ├── ex01-age/ex01-age.cpp
     │   ├── ex02-points/ex02-points.cpp
     │   └── …
@@ -64,13 +64,13 @@ algoc_exercices/
 - Chaque exercice a son propre dossier, qui porte le même nom que le fichier.
 - Les consignes sont **dans le code**, en anglais et en français (`// TASK 1:` / `// TÂCHE 1 :`).
 
-## 💻 Faire un exercice C++ (Programiz)
+## 💻 Faire un exercice C++ (OneCompiler)
 
 1. Ouvrez l'exercice dans ce dépôt, puis copiez tout le code.
-2. Ouvrez [Programiz](https://www.programiz.com/cpp-programming/online-compiler/) et remplacez le code de l'éditeur par celui de l'exercice.
+2. Ouvrez [OneCompiler](https://onecompiler.com/cpp) et remplacez le code de l'éditeur par celui de l'exercice.
 3. Suivez les consignes `TASK` / `TÂCHE` écrites dans les commentaires.
-4. Cliquez sur **Run** et vérifiez le résultat dans le panneau **Output**.
-5. Pour les exercices qui posent une question (`std::cin`), tapez votre réponse dans le panneau **Output**, puis appuyez sur Entrée.
+4. Cliquez sur **Run** et vérifiez le résultat dans la zone **Output**.
+5. Pour les exercices qui posent une question (`std::cin`) : tapez votre réponse dans la zone **STDIN** **avant** de cliquer sur **Run** (une réponse par ligne s'il y a plusieurs questions).
 
 ## 🤖 Faire un exercice AlgoC (robot)
 
