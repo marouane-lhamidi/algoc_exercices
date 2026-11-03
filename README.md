@@ -12,6 +12,50 @@ Ce dépôt accompagne le cours **AlgoC**. Chaque leçon contient :
 
 Le but est de comprendre **pourquoi** chaque notion est utile, et pas seulement comment l'écrire, puis de savoir résoudre de petits problèmes, étape par étape.
 
+> 💡 Astuce : pour ouvrir un lien dans un **nouvel onglet**, faites **Ctrl + clic** (Windows) ou **Cmd + clic** (Mac).
+
+## 💻 Faire un exercice C++ (OneCompiler)
+
+1. Ouvrez l'exercice dans ce dépôt, puis copiez tout le code.
+2. Ouvrez [OneCompiler](https://onecompiler.com/cpp) et remplacez le code de l'éditeur par celui de l'exercice.
+3. Suivez les consignes `TASK` / `TÂCHE` écrites dans les commentaires.
+4. Cliquez sur **Run** et vérifiez le résultat dans la zone **Output**.
+5. Pour les exercices qui posent une question (`std::cin`) : tapez votre réponse dans la zone **STDIN** **avant** de cliquer sur **Run** (une réponse par ligne s'il y a plusieurs questions).
+
+## 🔌 Installer l'Arduino IDE pour AlgoC (à faire une seule fois)
+
+Pour envoyer un programme sur le robot, il faut l'**Arduino IDE** avec la carte **AlgoC**.
+
+1. **Télécharger** l'Arduino IDE sur [arduino.cc/en/software](https://www.arduino.cc/en/software), puis l'installer.
+2. **Ajouter l'adresse AlgoC** : ouvrez **Fichier › Préférences**. Dans le champ
+   **URL de gestionnaire de cartes supplémentaires**, collez cette adresse, puis cliquez sur **OK** :
+   ```
+   https://raw.githubusercontent.com/Algobrix/algoc/main/package_Algoc_index.json
+   ```
+3. **Installer la carte** : **Outils › Carte › Gestionnaire de carte**, cherchez **AlgoC**, puis cliquez sur **Installer**.
+4. **Choisir la carte** : **Outils › Carte › AlgoBrix › AlgoC**.
+5. **Brancher le robot** : reliez le **Brain Block** à l'ordinateur avec le câble USB.
+   La batterie doit être branchée et allumée. Puis choisissez le port dans **Outils › Port**.
+6. **Tester** : cliquez sur **Téléverser** (la flèche →) avec un programme vide.
+   Ouvrez **Outils › Moniteur série** et réglez la vitesse sur **115200**. Vous devez voir :
+   `Device started with firmware version … Battery voltage is … V` ✅
+
+> 💡 Une fois le programme envoyé, le robot fonctionne **seul** : le câble USB n'est plus nécessaire.
+
+## 🤖 Faire un exercice AlgoC (robot)
+
+1. Ouvrez le fichier `.ino` dans l'Arduino IDE (installé avec la section ci-dessus).
+2. Suivez les consignes écrites dans les commentaires.
+3. Cliquez sur **Téléverser** et observez ce que fait le robot.
+
+## ✅ Méthode de travail
+
+1. Ouvrez la démo de la leçon et testez-la.
+2. Lisez les consignes dans le code de l'exercice.
+3. Essayez de le résoudre **seul** d'abord.
+4. Cliquez sur **Run**, puis testez avec différentes valeurs.
+5. Si vous êtes bloqué, relisez la leçon ou demandez à votre enseignant.
+
 ## 🧪 Leçons
 
 Ouvrez la démo **avant** de commencer les exercices de la leçon.
@@ -19,11 +63,11 @@ Ouvrez la démo **avant** de commencer les exercices de la leçon.
 | # | Leçon | Démo | Exercices C++ | Exercices AlgoC |
 |---|-------|------|---------------|-----------------|
 | 1 | Les variables | [▶ Ouvrir la démo](https://marouane-lhamidi.github.io/variables-demo/) | [📂 Variables/cpp](./Variables/cpp) | [🤖 Variables/algoc](./Variables/algoc) |
-| 2 | *Bientôt disponible* | — | — | — |
+| 2 | Les conditions | [▶ Ouvrir la démo](https://conditions-demo.digital-craft-maroc.workers.dev/) | [📂 conditions/C++](./conditions/C++) | — |
 | 3 | *Bientôt disponible* | — | — | — |
 
 <!-- Pour ajouter une leçon, copiez cette ligne et complétez-la :
-| 2 | Les conditions | [▶ Ouvrir la démo](https://marouane-lhamidi.github.io/conditions-demo/) | [📂 Conditions/cpp](./Conditions/cpp) | [🤖 Conditions/algoc](./Conditions/algoc) |
+| 3 | Les boucles | [▶ Ouvrir la démo](https://…) | [📂 Boucles/cpp](./Boucles/cpp) | [🤖 Boucles/algoc](./Boucles/algoc) |
 -->
 
 ## 📝 Exercices de la leçon 1 — Les variables
@@ -63,28 +107,6 @@ algoc_exercices/
 - Chaque leçon a son dossier, avec un sous-dossier `cpp/` et un sous-dossier `algoc/`.
 - Chaque exercice a son propre dossier, qui porte le même nom que le fichier.
 - Les consignes sont **dans le code**, en anglais et en français (`// TASK 1:` / `// TÂCHE 1 :`).
-
-## 💻 Faire un exercice C++ (OneCompiler)
-
-1. Ouvrez l'exercice dans ce dépôt, puis copiez tout le code.
-2. Ouvrez [OneCompiler](https://onecompiler.com/cpp) et remplacez le code de l'éditeur par celui de l'exercice.
-3. Suivez les consignes `TASK` / `TÂCHE` écrites dans les commentaires.
-4. Cliquez sur **Run** et vérifiez le résultat dans la zone **Output**.
-5. Pour les exercices qui posent une question (`std::cin`) : tapez votre réponse dans la zone **STDIN** **avant** de cliquer sur **Run** (une réponse par ligne s'il y a plusieurs questions).
-
-## 🤖 Faire un exercice AlgoC (robot)
-
-1. Ouvrez le fichier `.ino` dans l'éditeur AlgoC.
-2. Suivez les consignes écrites dans les commentaires.
-3. Envoyez le programme sur le robot et observez ce qu'il fait.
-
-## ✅ Méthode de travail
-
-1. Ouvrez la démo de la leçon et testez-la.
-2. Lisez les consignes dans le code de l'exercice.
-3. Essayez de le résoudre **seul** d'abord.
-4. Cliquez sur **Run**, puis testez avec différentes valeurs.
-5. Si vous êtes bloqué, relisez la leçon ou demandez à votre enseignant.
 
 ---
 
